@@ -39,6 +39,10 @@ body {
     color: var(--verde-container);
 }
 
+strong{
+    color: var(--verde-escuro);
+}
+
 /* NAVEGAÇÃO */
 
 nav {
