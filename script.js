@@ -34,8 +34,9 @@ function alterarConteudo(contexto) {
             conteudo.innerHTML = `
             <h1>Sobre mim</h1>
                 <div class="conteudo">
-                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá mundo! Seja bem-vindo(a) ao meu portfólio.</p>
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Olá mundo! Seja bem-vindo(a) ao meu portfólio.</p>
                     <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sou técnica em <strong>desenvolvimento de sistemas</strong> e estudante de <strong>engenharia de software</strong>. Minha paixão pela tecnologia, junto com a sua constante evolução, aumentam minha vontade de aprender novas coisas para melhorar a eficiência e qualidade de tudo que faço.</p>
+                    <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atualmente <strong>busco pela minha primeira oportunidade de estágio</strong>, onde vou aprender e aprimorar habilidades. Caso se interesse, entre em contato!</p>
                 </div>
             `
             break;
@@ -66,7 +67,7 @@ function alterarConteudo(contexto) {
                 </div>
             `
             break;
-        default: 'sobre'
+        default:
             break;
     }
 }

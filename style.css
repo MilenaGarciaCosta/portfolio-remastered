@@ -11,6 +11,11 @@
     --verde-habilidades: #84A78E;
 }
 
+::selection {
+    background-color: var(--verde-escuro);
+    color: lightgreen;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,8 +24,27 @@
 }
 
 body {
-    background: linear-gradient(50deg, rgba(57, 97, 77, 1) 25%, rgba(121, 163, 119, 1) 71%, rgba(167, 211, 151, 1) 100%);
+    background: linear-gradient(45deg, rgb(45, 80, 62) 25%, rgb(90, 129, 88) 71%, rgb(190, 233, 174) 100%);
     background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: 150% 150%;
+    animation: color 12s ease-in-out infinite;
+    
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .main-body{
@@ -67,7 +91,7 @@ nav li {
     cursor: pointer;
     font-family: var(--fonte-geral);
     list-style: none;
-    padding: 0.2em 1.2em;
+    padding: 0.35em 1.2em;
     height: 100%;
     width: fit-content;
 }
@@ -87,7 +111,8 @@ section{
 aside{
     background-color: var(--verde-container);
     border-radius: 10px;
-    max-height: 70vh;
+    max-height: 60vh;
+    scroll-behavior: smooth;
 }
 
 /* ASIDE ESQUERDO */
@@ -111,8 +136,7 @@ aside{
     align-items: center;
     position: relative;
     top: -65px;
-    margin: 0 10px 25px 10px;
-    height: fit-content;
+    margin: 0 10px;
 }
 
 .informacoes-container{
@@ -162,11 +186,10 @@ h4{
 /* ASIDE DIREITA*/
 
 .aside-direita{
-    width: 50vw;
+    width: 55vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
 }
 
 /* CONTEÚDO GERAL*/
@@ -176,7 +199,12 @@ h1{
     font-size: 37px;
     text-transform: uppercase;
     text-decoration: underline;
-    margin-bottom: 30px;
+    margin: 30px 0;
+}
+
+.conteudo{
+    overflow: scroll;
+    padding: 0 30px 30px 30px;
 }
 
 .conteudo p{
