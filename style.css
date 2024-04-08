@@ -23,6 +23,10 @@ body {
     background-attachment: fixed;
 }
 
+.main-body{
+    margin: 2% 8%;
+}
+
 .sombra-container{
     -webkit-box-shadow: 0px 0px 18px -7px var(--verde-escuro);
     -moz-box-shadow: 0px 0px 18px -7px var(--verde-escuro);
@@ -32,7 +36,6 @@ body {
 nav {
     display: flex;
     justify-content: end;
-    margin: 30px 30px 0 0;
 }
 
 .nav-container {
@@ -61,25 +64,21 @@ nav img {
 
 section{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 7em;   
+    justify-content: space-between;
+    margin-top: 7%;
 }
 
 aside{
     background-color: var(--verde-container);
-    max-height: 70vh;
     border-radius: 10px;
-    margin-bottom: 20px;
-    margin: 0 60px 35px 60px;
+    max-height: 70vh;
 }
 
 .aside-esquerda{
-    width: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: fit-content;
 }
 
 .img-perfil{
@@ -94,12 +93,12 @@ aside{
     align-items: center;
     position: relative;
     top: -65px;
-    margin-bottom: 25px;
+    margin: 0 10px 25px 10px;
+    height: fit-content;
 }
 
 .informacoes-container{
     background-color: var(--verde-container-secundario);
-    height: fit-content;
     width: fit-content;
     padding: 0 15px;
     margin-top: 20px;
@@ -143,7 +142,7 @@ h4{
 }
 
 .aside-direita{
-    width: 850px;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
