@@ -43,10 +43,79 @@ function alterarConteudo(contexto) {
         case 'habilidades':
             conteudo.innerHTML = `
             <h1>Habilidades</h1>
-                <div class="conteudo">
-                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quos et adipisci sunt? Sit nisi ad quasi sequi delectus minus laborum voluptas, similique, quisquam ab natus ullam necessitatibus error.</p>
-                    <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quos et adipisci sunt? Sit nisi ad quasi sequi delectus minus laborum voluptas, similique, quisquam ab natus ullam necessitatibus error.</p>
+          <div class="conteudo">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atualmente tenho estudado vários
+              assuntos para descobrir onde me encaixo e me desenvolvo melhor.
+              Aqui vou apresentar minhas habilidades principais:
+            </p>
+            <section class="grid-habilidades">
+              <div class="container-habilidades escuro">
+                <div class="titulo-habilidades">
+                  <img src="img/ingles.png" alt="inglês" />
+                  <h5>Inglês como segunda língua</h5>
                 </div>
+                <p>
+                  &nbsp;&nbsp; Sou brasileira com inglês avançado como segunda
+                  língua.
+                </p>
+              </div>
+
+              <div class="container-habilidades claro">
+                <div class="titulo-habilidades">
+                  <img src="img/web-dev.png" alt="desenvolvimento web" />
+                  <h5>Desenvolvimento web</h5>
+                </div>
+                <p>
+                  &nbsp;&nbsp; HTML5, CSS3, JavaScript, Bootstrap e Tailwind.
+                </p>
+              </div>
+
+              <div class="container-habilidades escuro">
+                <div class="titulo-habilidades">
+                  <img src="img/branch.png" alt="inglês" />
+                  <h5>Versionamento de projetos</h5>
+                </div>
+                <p>
+                  &nbsp;&nbsp; Utilizo a plataforma GitHub para auxiliar no
+                  versionamento dos meus projetos.
+                </p>
+              </div>
+
+              <div class="container-habilidades claro">
+                <div class="titulo-habilidades">
+                  <img src="img/banco-de-dados.png" alt="desenvolvimento web" />
+                  <h5>Banco de dados</h5>
+                </div>
+                <p>
+                  &nbsp;&nbsp; Tenho conhecimento intermediário de banco de
+                  dados com MySql Worckbench.
+                </p>
+              </div>
+
+              <div class="container-habilidades escuro">
+                <div class="titulo-habilidades">
+                  <img src="img/scrum.png" alt="inglês" />
+                  <h5>Metodologias ágeis</h5>
+                </div>
+                <p>
+                  &nbsp;&nbsp; Utilizei a metodologia Scrum para melhorar a
+                  eficiência do meu TCC.
+                </p>
+              </div>
+
+              <div class="container-habilidades claro">
+                <div class="titulo-habilidades">
+                  <img src="img/acessibilidade.png" alt="desenvolvimento web" />
+                  <h5>Design acessivel</h5>
+                </div>
+                <p>
+                  &nbsp;&nbsp; Utilizo mobile-first para
+                  melhorar a responsividade e acessibilidade.
+                </p>
+              </div>
+            </section>
+          </div>
             `
             break;
         case 'educacao':
