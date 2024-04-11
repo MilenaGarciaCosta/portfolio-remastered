@@ -49,7 +49,7 @@ function alterarConteudo(contexto) {
               assuntos para descobrir onde me encaixo e me desenvolvo melhor.
               Aqui vou apresentar minhas habilidades principais:
             </p>
-            <section class="grid-habilidades">
+            <section class="grid">
               <div class="container-habilidades escuro">
                 <div class="titulo-habilidades">
                   <img src="img/ingles.png" alt="inglês" />
@@ -121,10 +121,36 @@ function alterarConteudo(contexto) {
         case 'educacao':
             conteudo.innerHTML= `
             <h1>Educação</h1>
-                <div class="conteudo">
-                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quos et adipisci sunt? Sit nisi ad quasi sequi delectus minus laborum voluptas, similique, quisquam ab natus ullam necessitatibus error.</p>
-                    <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quos et adipisci sunt? Sit nisi ad quasi sequi delectus minus laborum voluptas, similique, quisquam ab natus ullam necessitatibus error.</p>
+          <div class="conteudo centralizar">
+            <section class="grid gap">
+              <div class="educacao-container">
+                <img src="img/side-line.png" alt="">
+                <div>
+                  <p class="titulo">Etec Ermelinda</p>
+                  <p class="descricao-titulo">Curso técnico de Desenvolvimento de Sistemas</p>
+                  <p class="periodo-educacao">2021 - 2023</p>
                 </div>
+              </div>
+
+              <div class="educacao-container">
+                <img src="img/side-line.png" alt="">
+                <div>
+                  <p class="titulo">FIAP</p>
+                  <p class="descricao-titulo">Bacharelado em Engenharia de Software</p>
+                  <p class="periodo-educacao">2024 - 2027</p>
+                </div>
+              </div>
+
+              <div class="educacao-container">
+                <img src="img/side-line.png" alt="">
+                <div>
+                  <p class="titulo">Excellent Global</p>
+                  <p class="descricao-titulo">Curso de inglês (A1 ao C2)</p>
+                  <p class="periodo-educacao">2016 - 2021</p>
+                </div>
+              </div>
+            </section>
+          </div>
             `
             break;
         case 'projetos':
