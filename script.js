@@ -7,6 +7,9 @@ const projetos_btn= document.querySelector('#projetos')
 const alerta_hidden = document.querySelector('.container-aleta')
 const button = document.querySelector('#button')
 
+
+// ATRIBUINDO VALORES PARA CADA ITEM DO MENU
+
 sobre_btn.addEventListener('click', () =>{
     alterarConteudo('sobre')
     sobre_btn.classList.add('ativo')
@@ -26,6 +29,8 @@ projetos_btn.addEventListener('click', () =>{
     alterarConteudo('projetos')
     projetos_btn.classList.add('ativo')
 })
+
+// FUNÇÃO PARA MUDAR CONTEÚDO DE ACORDO COM QUAL MENU
 
 function alterarConteudo(contexto) {
     botoes.forEach(function (contexto){
@@ -168,21 +173,18 @@ function alterarConteudo(contexto) {
     }
 }
 
-// Referencie o elemento que contém o endereço de email
+// FUNÇÃO COPIAR E COLAR EMAIL
+
 var emailElement = document.querySelector('.email');
 
-// Adicione um event listener para o botão
 emailElement.addEventListener('click', function() {
-  // Crie um input para armazenar o conteúdo do email
   var input = document.createElement('input');
   input.setAttribute('value', emailElement.textContent);
   document.body.appendChild(input);
 
-  // Selecione e copie o conteúdo do input
   input.select();
   document.execCommand('copy');
 
-  // Remova o input após a cópia ter sido feita
   document.body.removeChild(input);
 
   alerta_hidden.classList.remove('hidden')
