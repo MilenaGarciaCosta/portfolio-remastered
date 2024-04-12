@@ -157,8 +157,7 @@ function alterarConteudo(contexto) {
             conteudo.innerHTML = `
             <h1>Projetos</h1>
                 <div class="conteudo">
-                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quos et adipisci sunt? Sit nisi ad quasi sequi delectus minus laborum voluptas, similique, quisquam ab natus ullam necessitatibus error.</p>
-                    <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quos et adipisci sunt? Sit nisi ad quasi sequi delectus minus laborum voluptas, similique, quisquam ab natus ullam necessitatibus error.</p>
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                 </div>
             `
             break;

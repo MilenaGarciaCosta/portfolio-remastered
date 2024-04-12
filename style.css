@@ -23,6 +23,26 @@
   scroll-behavior: smooth;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--verde-escuro) var(--cinza-habilidades);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--cinza-habilidades);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--verde-escuro);
+  border-radius: 20px;
+  border: 3px solid var(--cinza-habilidades);
+}
+
 body {
   background: linear-gradient(
     45deg,
@@ -50,6 +70,16 @@ body {
     background-position: 0 50%;
   }
 }
+
+li, img, .titulo{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 
 .main-body {
   margin: 2% 8%;
@@ -160,6 +190,7 @@ aside {
   font-family: var(--fonte-titulos);
   font-weight: 600;
   font-size: 17px;
+  letter-spacing: 1px;
 }
 
 .subtitulo {
@@ -290,3 +321,6 @@ h5 {
   column-gap: 2vw;
   row-gap: 15px;
 }
+
+/* PROJETOS  */
+
