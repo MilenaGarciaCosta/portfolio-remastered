@@ -4,6 +4,8 @@ const sobre_btn = document.querySelector('#sobre')
 const habilidades_btn = document.querySelector('#habilidades')
 const educacao_btn = document.querySelector('#educacao')
 const projetos_btn= document.querySelector('#projetos')
+const alerta_hidden = document.querySelector('.container-aleta')
+const button = document.querySelector('#button')
 
 sobre_btn.addEventListener('click', () =>{
     alterarConteudo('sobre')
@@ -165,3 +167,26 @@ function alterarConteudo(contexto) {
             break;
     }
 }
+
+// Referencie o elemento que contém o endereço de email
+var emailElement = document.querySelector('.email');
+
+// Adicione um event listener para o botão
+emailElement.addEventListener('click', function() {
+  // Crie um input para armazenar o conteúdo do email
+  var input = document.createElement('input');
+  input.setAttribute('value', emailElement.textContent);
+  document.body.appendChild(input);
+
+  // Selecione e copie o conteúdo do input
+  input.select();
+  document.execCommand('copy');
+
+  // Remova o input após a cópia ter sido feita
+  document.body.removeChild(input);
+
+  alerta_hidden.classList.remove('hidden')
+  button.addEventListener('click', function(){
+    alerta_hidden.classList.add('hidden')
+  })
+});
