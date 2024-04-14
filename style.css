@@ -136,6 +136,7 @@ button{
   box-shadow: 3px 3px 14px 0px rgba(27, 27, 27, 0.42);
   -webkit-box-shadow: 3px 3px 14px 0px rgba(20, 20, 20, 0.42);
   -moz-box-shadow: 3px 3px 14px 0px rgba(19, 19, 19, 0.42);
+  cursor: pointer;
 }
 
 button:hover{
