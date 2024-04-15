@@ -20,12 +20,9 @@
   margin: 0;
   padding: 0;
   color: var(--verde-escuro);
-  scroll-behavior: smooth;
-}
-
-* {
   scrollbar-width: thin;
   scrollbar-color: var(--verde-escuro) var(--cinza-habilidades);
+  scroll-behavior: smooth;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -85,7 +82,7 @@ a{
 }
 
 .main-body {
-  margin: 2% 8%;
+  margin: 1% 8%;
 }
 
 .sombra-container {
@@ -164,6 +161,23 @@ button:hover{
   display: none;
 }
 
+.bold{
+  font-weight: 600;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+.texto-footer, .bold{
+  font-size: 13px;
+  color: var(--cinza-habilidades);
+  opacity: 85%;
+}
+
 /* NAVEGAÇÃO */
 
 nav {
@@ -209,19 +223,7 @@ aside {
   background-color: var(--verde-container);
   border-radius: 10px;
   scroll-behavior: smooth;
-  max-height: 68vh;
-}
-
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.texto-footer{
-  font-size: 13px;
-  color: var(--cinza-habilidades);
-  opacity: 85%;
+  height: 68vh;
 }
 
 /* ASIDE ESQUERDO */
@@ -252,12 +254,17 @@ footer{
   background-color: var(--verde-container-secundario);
   width: fit-content;
   padding: 0 15px;
-  margin-top: 20px;
   border-radius: 5px;
   padding-bottom: 15px;
 }
 
-.informacoes-item {
+.center-informacoes-container{
+  height: 47vh;
+  align-items: center;
+  display: flex;
+}
+
+.informacoes-item{
   margin-top: 15px;
 }
 
