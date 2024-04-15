@@ -30,7 +30,7 @@
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
@@ -47,7 +47,7 @@ body {
   background: linear-gradient(
     45deg,
     rgb(39, 71, 55) 25%,
-    rgb(90, 129, 88) 71%,
+    rgb(90, 129, 88) 60%,
     rgb(190, 233, 174) 100%
   );
   background-attachment: fixed;
@@ -56,7 +56,7 @@ body {
   flex-direction: column;
   justify-content: center;
   background-size: 200% 200%;
-  animation: color 12s ease-in-out infinite;
+  animation: color 8s ease-in-out infinite;
 }
 
 @keyframes color {
@@ -202,14 +202,26 @@ nav img {
 section {
   display: flex;
   justify-content: space-between;
-  margin-top: 7%;
+  margin-top: 7%; 
 }
 
 aside {
   background-color: var(--verde-container);
   border-radius: 10px;
-  max-height: 60vh;
   scroll-behavior: smooth;
+  max-height: 68vh;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-footer{
+  font-size: 13px;
+  color: var(--cinza-habilidades);
+  opacity: 85%;
 }
 
 /* ASIDE ESQUERDO */
