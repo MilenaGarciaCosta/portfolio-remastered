@@ -25,7 +25,8 @@
   scroll-behavior: smooth;
 }
 
-/* Works on Chrome, Edge, and Safari */
+/* SCROOL BAR */
+
 *::-webkit-scrollbar {
   width: 10px;
 }
@@ -40,12 +41,18 @@
   border: 3px solid var(--cinza-habilidades);
 }
 
+/*BODY */
+
+.main-body {
+  margin: 1% 8%;
+}
+
 body {
   background: linear-gradient(
     45deg,
     rgb(39, 71, 55) 25%,
     rgb(90, 129, 88) 60%,
-    rgb(190, 233, 174) 100%
+    rgb(202, 243, 187) 100%
   );
   background-attachment: fixed;
   height: 100vh;
@@ -68,6 +75,8 @@ body {
   }
 }
 
+/* ESTÁTICOS */
+
 li, img, .titulo{
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -81,9 +90,20 @@ a{
   text-decoration: none;
 }
 
-.main-body {
-  margin: 1% 8%;
+h6{
+  color: var(--cinza-habilidades);
+  font-family: var(--fonte-geral);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 28px;
 }
+
+strong {
+  color: var(--verde-escuro);
+}
+
+/* FUNÇÕES GERAIS */
 
 .sombra-container {
   -webkit-box-shadow: 0px 0px 18px -7px var(--verde-escuro);
@@ -97,9 +117,11 @@ a{
   color: var(--verde-container);
 }
 
-strong {
-  color: var(--verde-escuro);
+.bold{
+  font-weight: 600;
 }
+
+/* ALERTA ÁREA DE TRANSFERENCIA */
 
 .alerta{
   background-color: var(--verde-escuro);
@@ -109,15 +131,6 @@ strong {
   align-items: center;
   padding: 23px 30px;
   border-radius: 8px;
-}
-
-h6{
-  color: var(--cinza-habilidades);
-  font-family: var(--fonte-geral);
-  font-size: 20px;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 28px;
 }
 
 button{
@@ -142,7 +155,7 @@ button:hover{
   -moz-box-shadow: 3px 3px 14px 0px rgba(0,0,0,0.42) inset;
 }
 
-.container-aleta{
+.container-blur{
   position: absolute;
   z-index: 1;
   height: 100vh;
@@ -159,23 +172,6 @@ button:hover{
 
 .hidden{
   display: none;
-}
-
-.bold{
-  font-weight: 600;
-}
-
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
-}
-
-.texto-footer, .bold{
-  font-size: 13px;
-  color: var(--cinza-habilidades);
-  opacity: 85%;
 }
 
 /* NAVEGAÇÃO */
@@ -211,7 +207,7 @@ nav img {
   height: 35px;
 }
 
-/*ASIDES*/
+/* ASIDES GERAL */
 
 section {
   display: flex;
@@ -260,7 +256,9 @@ aside {
 
 .center-informacoes-container{
   height: 47vh;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   display: flex;
 }
 
@@ -298,6 +296,13 @@ h3 {
 h4 {
   font-family: var(--fonte-geral);
   font-weight: 100;
+}
+
+.texto-footer, .bold{
+  font-size: 13px;
+  color: var(--verde-escuro);
+  opacity: 85%;
+  margin-top: 15px;
 }
 
 /* ASIDE DIREITA*/
@@ -421,4 +426,31 @@ h5 {
 .img-projeto{
   border-radius: 10px 10px 0 0;
   width: 15vw;
+  opacity: 80%;
+}
+
+.img-projeto:hover{
+  opacity: 100%;
+}
+
+
+/* PROJETO POP-UP*/
+
+.projeto-container{
+  height: 70vh;
+  max-height: 70vh;
+  width: 70vw;
+  background-color: var(--verde-escuro);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.btn-fechar{
+  color: var(--cinza-habilidades);
+  font-family: var(--fonte-geral);
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
 }
