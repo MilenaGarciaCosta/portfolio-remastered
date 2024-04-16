@@ -406,3 +406,19 @@ h5 {
 
 /* PROJETOS  */
 
+.projetos-container{
+  border-radius: 10px;
+  background-color: var(--verde-habilidades);
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.projetos-container h5{
+  padding: 6px 0 6px 6px;
+}
+
+.img-projeto{
+  border-radius: 10px 10px 0 0;
+  width: 15vw;
+}

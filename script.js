@@ -163,9 +163,27 @@ function alterarConteudo(contexto) {
         case 'projetos':
             conteudo.innerHTML = `
             <h1>Projetos</h1>
-                <div class="conteudo">
-                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                </div>
+          <div class="conteudo grid">
+              <div class="projetos-container sombra-container">
+                <img src="img/vinheria-1.PNG" alt="" class="img-projeto" />
+                <h5 class="titulo">Vinheria Agnello</h5>
+              </div>
+
+              <div class="projetos-container sombra-container">
+                <img src="img/game-store-2.PNG" alt="" class="img-projeto" />
+                <h5 class="titulo">Game Store</h5>
+              </div>
+
+              <div class="projetos-container sombra-container">
+                <img src="img/chiquito-img-1.PNG" alt="" class="img-projeto" />
+                <h5 class="titulo">Chiquito aventuras</h5>
+              </div>
+
+              <div class="projetos-container sombra-container">
+                <img src="img/kos-manager-1.PNG" alt="" class="img-projeto" />
+                <h5 class="titulo">Kos Manager (TCC)</h5>
+              </div>
+          </div>
             `
             break;
         default:
