@@ -4,8 +4,12 @@ const sobre_btn = document.querySelector('#sobre')
 const habilidades_btn = document.querySelector('#habilidades')
 const educacao_btn = document.querySelector('#educacao')
 const projetos_btn= document.querySelector('#projetos')
-const alerta_hidden = document.querySelector('.container-aleta')
+const alerta_hidden = document.querySelector('.transferencia_func')
 const button = document.querySelector('#button')
+
+const projeto_hidden = document.querySelector('.projeto_func')
+const projeto_container_btn = document.querySelector('.projetos-container')
+const fechar_btn = document.querySelector('.btn-fechar')
 
 
 // ATRIBUINDO VALORES PARA CADA ITEM DO MENU
@@ -128,7 +132,7 @@ function alterarConteudo(contexto) {
         case 'educacao':
             conteudo.innerHTML= `
             <h1>Educação</h1>
-          <div class="conteudo centralizar">
+          <div class="conteudo">
             <section class="grid gap">
               <div class="educacao-container">
                 <img src="img/side-line.png" alt="">
@@ -189,6 +193,7 @@ function alterarConteudo(contexto) {
         default:
             break;
     }
+    
 }
 
 // FUNÇÃO COPIAR E COLAR EMAIL
@@ -210,3 +215,10 @@ emailElement.addEventListener('click', function() {
     alerta_hidden.classList.add('hidden')
   })
 });
+
+/*projeto_container_btn.addEventListener('click', function() {
+  projeto_hidden.classList.remove('hidden')
+  fechar_btn.addEventListener('click', function(){
+    projeto_hidden.classList.add('hidden')
+  })
+});*/
