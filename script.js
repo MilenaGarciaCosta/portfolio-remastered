@@ -216,9 +216,9 @@ emailElement.addEventListener('click', function() {
   })
 });
 
-/*projeto_container_btn.addEventListener('click', function() {
+projeto_container_btn.addEventListener('click', function() {
   projeto_hidden.classList.remove('hidden')
   fechar_btn.addEventListener('click', function(){
     projeto_hidden.classList.add('hidden')
   })
-});*/
+});
