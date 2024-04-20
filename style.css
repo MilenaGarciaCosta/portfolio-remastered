@@ -280,7 +280,7 @@ aside {
   cursor: pointer;
 }
 
-.subtitulo:hover {
+.subtitulo:hover{
   text-decoration: underline;
 }
 
@@ -428,19 +428,19 @@ h5 {
 .img-projeto{
   border-radius: 10px 10px 0 0;
   width: 15vw;
-  opacity: 80%;
 }
 
 
 /* PROJETO POP-UP*/
 
 .projeto-container{
-  height: 70vh;
   max-height: 70vh;
-  width: 70vw;
+  width: 65vw;
   background-color: var(--verde-escuro);
   border-radius: 10px;
-  padding: 20px;
+  padding: 3.5vh 3vw 5vh 3vw;
+  scroll-behavior: smooth;
+  overflow: auto;
 }
 
 .btn-fechar{
@@ -451,4 +451,59 @@ h5 {
   display: flex;
   justify-content: end;
   cursor: pointer;
+}
+
+.projeto-titulo{
+  color: var(--verde-container);
+  margin-top: 3vh;
+  font-family: var(--fonte-titulos);
+  font-size: 35px;
+  text-decoration: underline currentColor 1px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.projeto-desc-container{
+  margin-top: 4.5vh;
+}
+
+.img-projeto-popUp{
+  width: 27vw;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+}
+
+.tecnologias-desc, .tecnologias-desc a, .projeto-texto-desc{
+  font-size: 13px;
+  color: var(--cinza-habilidades);
+  font-family: var(--fonte-geral);
+  letter-spacing: 0.5px;
+}
+
+.utilizadas{
+  word-spacing: 0.25vw;
+}
+
+.tecnologias-desc a{
+  text-decoration: underline currentColor 1px;
+}
+
+.tecnologias-titulo{
+  color: var(--cinza-habilidades);
+  font-family: var(--fonte-titulos);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.projeto-container-flex{
+  display: flex;
+}
+
+.projeto-texto-desc{
+  margin-left: 6vw;
+  width: fit-content;
+  text-align: justify;
+  font-size: 16px;
+  color: var(--verde-container);
+  margin-top: 3.7vh;
 }

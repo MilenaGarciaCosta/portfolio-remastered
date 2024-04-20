@@ -1,48 +1,56 @@
-const conteudo = document.querySelector('.aside-direita')
-const botoes = document.querySelectorAll('.btn')
-const sobre_btn = document.querySelector('#sobre')
-const habilidades_btn = document.querySelector('#habilidades')
-const educacao_btn = document.querySelector('#educacao')
-const projetos_btn= document.querySelector('#projetos')
-const alerta_hidden = document.querySelector('.transferencia_func')
-const button = document.querySelector('#button')
+const conteudo = document.querySelector('.aside-direita');
+const botoes = document.querySelectorAll('.btn');
+const sobre_btn = document.querySelector('#sobre');
+const habilidades_btn = document.querySelector('#habilidades');
+const educacao_btn = document.querySelector('#educacao');
+const projetos_btn = document.querySelector('#projetos');
+const alerta_hidden = document.querySelector('.transferencia_func');
+const button = document.querySelector('#button');
 
-const projeto_hidden = document.querySelector('.projeto_func')
-const projeto_container_btn = document.querySelector('.projetos-container')
-const fechar_btn = document.querySelector('.btn-fechar')
+const projeto_hidden = document.querySelector(".projeto_func");
+const projeto_container_btn = document.querySelectorAll(".projetos-container");
+const fechar_btn = document.querySelector(".btn-fechar");
+const vinheria_pjt = document.querySelector('.vinheria');
+const gameStore_pjt = document.querySelector('.game-store');
+const chiquito_pjt = document.querySelector('.chiquito');
+const kosManager_pjt = document.querySelector('.kos-manager');
 
+const titulo_pjt = document.querySelector('.projeto-titulo'); // textContent
+const img_pjt = document.querySelector('.img-projeto-popUp'); // setAttribute
+const tecnologias_pjt = document.querySelector('.utilizadas');// textContent
+const link_pjt = document.querySelector('.link'); // textContent
+const textoDesc_pjt = document.querySelector('.projeto-texto-desc'); // textContent
 
 // ATRIBUINDO VALORES PARA CADA ITEM DO MENU
 
-sobre_btn.addEventListener('click', () =>{
-    alterarConteudo('sobre')
-    sobre_btn.classList.add('ativo')
+sobre_btn.addEventListener('click', () => {
+  alterarConteudo('sobre')
+  sobre_btn.classList.add('ativo')
 })
 
-habilidades_btn.addEventListener('click', () =>{
-    alterarConteudo('habilidades')
-    habilidades_btn.classList.add('ativo')
+habilidades_btn.addEventListener('click', () => {
+  alterarConteudo('habilidades')
+  habilidades_btn.classList.add('ativo')
 })
 
-educacao_btn.addEventListener('click', () =>{
-    alterarConteudo('educacao')
-    educacao_btn.classList.add('ativo')
+educacao_btn.addEventListener('click', () => {
+  alterarConteudo('educacao')
+  educacao_btn.classList.add('ativo')
 })
 
-projetos_btn.addEventListener('click', () =>{
-    alterarConteudo('projetos')
-    projetos_btn.classList.add('ativo')
+projetos_btn.addEventListener('click', () => {
+  alterarConteudo('projetos')
+  projetos_btn.classList.add('ativo')
 })
 
 // FUNÇÃO PARA MUDAR CONTEÚDO DE ACORDO COM QUAL MENU
-
 function alterarConteudo(contexto) {
-    botoes.forEach(function (contexto){
-        contexto.classList.remove('ativo')
-    })
-    switch (contexto) {
-        case 'sobre':
-            conteudo.innerHTML = `
+  botoes.forEach(function (contexto) {
+    contexto.classList.remove('ativo')
+  })
+  switch (contexto) {
+    case 'sobre':
+      conteudo.innerHTML = `
             <h1>Sobre mim</h1>
                 <div class="conteudo">
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Olá mundo! Seja bem-vindo(a) ao meu portfólio.</p>
@@ -50,9 +58,9 @@ function alterarConteudo(contexto) {
                     <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atualmente <strong>busco pela minha primeira oportunidade de estágio</strong>, onde vou aprender e aprimorar habilidades. Caso se interesse, entre em contato!</p>
                 </div>
             `
-            break;
-        case 'habilidades':
-            conteudo.innerHTML = `
+      break;
+    case 'habilidades':
+      conteudo.innerHTML = `
             <h1>Habilidades</h1>
           <div class="conteudo">
             <p>
@@ -128,9 +136,9 @@ function alterarConteudo(contexto) {
             </section>
           </div>
             `
-            break;
-        case 'educacao':
-            conteudo.innerHTML= `
+      break;
+    case 'educacao':
+      conteudo.innerHTML = `
             <h1>Educação</h1>
           <div class="conteudo">
             <section class="grid gap">
@@ -163,44 +171,43 @@ function alterarConteudo(contexto) {
             </section>
           </div>
             `
-            break;
-        case 'projetos':
-            conteudo.innerHTML = `
+      break;
+    case 'projetos':
+      conteudo.innerHTML = `
             <h1>Projetos</h1>
           <div class="conteudo grid">
-              <div class="projetos-container sombra-container">
-                <img src="img/vinheria-1.PNG" alt="" class="img-projeto" />
-                <h5 class="titulo">Vinheria Agnello</h5>
-              </div>
+          <div onclick="projeto_popUp('kosManager')" class="projetos-container sombra-container kos-manager">
+              <img src="img/kos-manager-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
+              <h5 class="titulo">Kos Manager (TCC)</h5>
+            </div>
 
-              <div class="projetos-container sombra-container">
-                <img src="img/game-store-2.PNG" alt="" class="img-projeto" />
-                <h5 class="titulo">Game Store</h5>
-              </div>
+            <div onclick="projeto_popUp('chiquito')" class="projetos-container sombra-container chiquito">
+              <img src="img/chiquito-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
+              <h5 class="titulo">Chiquito aventuras</h5>
+            </div>
 
-              <div class="projetos-container sombra-container">
-                <img src="img/chiquito-img-1.PNG" alt="" class="img-projeto" />
-                <h5 class="titulo">Chiquito aventuras</h5>
-              </div>
+            <div onclick="projeto_popUp('gameStore')" class="projetos-container sombra-container game-store">
+              <img src="img/game-store-2.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
+              <h5 class="titulo">Game Store</h5>
+            </div>
 
-              <div class="projetos-container sombra-container">
-                <img src="img/kos-manager-1.PNG" alt="" class="img-projeto" />
-                <h5 class="titulo">Kos Manager (TCC)</h5>
-              </div>
+            <div onclick="projeto_popUp('vinheria')" class="projetos-container sombra-container vinheria">
+              <img src="img/vinheria-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
+              <h5 class="titulo">Vinheria Agnello</h5>
+            </div>
           </div>
             `
-            break;
-        default:
-            break;
-    }
-    
+      break;
+    default:
+      break;
+  }
+
 }
 
 // FUNÇÃO COPIAR E COLAR EMAIL
-
 var emailElement = document.querySelector('.email');
 
-emailElement.addEventListener('click', function() {
+emailElement.addEventListener('click', function () {
   var input = document.createElement('input');
   input.setAttribute('value', emailElement.textContent);
   document.body.appendChild(input);
@@ -211,14 +218,50 @@ emailElement.addEventListener('click', function() {
   document.body.removeChild(input);
 
   alerta_hidden.classList.remove('hidden')
-  button.addEventListener('click', function(){
+  button.addEventListener('click', function () {
     alerta_hidden.classList.add('hidden')
   })
 });
 
-projeto_container_btn.addEventListener('click', function() {
-  projeto_hidden.classList.remove('hidden')
-  fechar_btn.addEventListener('click', function(){
-    projeto_hidden.classList.add('hidden')
-  })
-});
+function projeto_popUp(nomePjt) {
+  projeto_hidden.classList.remove("hidden");
+  fechar_btn.addEventListener("click", function () {
+    projeto_hidden.classList.add("hidden");
+  });
+  switch (nomePjt) {
+    case 'vinheria':
+      titulo_pjt.textContent = `projeto vinheria agnello`
+      img_pjt.setAttribute('src', `/img/vinheria-1.png`)
+      tecnologias_pjt.innerHTML = ` <strong class="tecnologias-titulo">TECNOLOGIAS UTILIZADAS:&nbsp;</strong> HTML, CSS`
+      link_pjt.innerHTML = `<strong class="tecnologias-titulo">LINK REPOSITÓRIO:&nbsp;</strong> <a id="link_href" href="https://github.com/medeirossteffany/vinheriaAngello" target="_blank"> /vinheriaAngello </a>`
+      textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esse projeto foi desenvolvido para um trabalho de Front-end no meu 1° semestre de faculdade, com o intuito de criar um e-commerce para a tradicional Vinheria Agnello sem perder a essência das visitas à vinheria.`
+      break;
+
+    case 'gameStore':
+      titulo_pjt.textContent = `Game Store`
+      img_pjt.setAttribute('src', `/img/game-store-1.png`)
+      tecnologias_pjt.innerHTML = ` <strong class="tecnologias-titulo">TECNOLOGIAS UTILIZADAS:&nbsp;</strong> HTML, CSS`
+      link_pjt.innerHTML = `<strong class="tecnologias-titulo">LINK REPOSITÓRIO:&nbsp;</strong> <a id="link_href" href="https://github.com/MilenaGarciaCosta/Game-Store" target="_blank"> /Game-Store </a>`
+      textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esse projeto foi desenvolvido para um trabalho de Front-end no meu 1° semestre de faculdade, com o intuito de criar uma loja online de artigos de tecnologia. Um projeto simples que mostra o poder do CSS!`
+      break;
+
+    case 'chiquito':
+      titulo_pjt.textContent = `Chiquito aventuras`
+      img_pjt.setAttribute('src', `/img/chiquito-1.png`)
+      tecnologias_pjt.innerHTML = ` <strong class="tecnologias-titulo">TECNOLOGIAS UTILIZADAS:&nbsp;</strong> HTML, CSS, JavaScript`
+      link_pjt.innerHTML = `<strong class="tecnologias-titulo">LINK REPOSITÓRIO:&nbsp;</strong> <a id="link_href" href="https://github.com/MilenaGarciaCosta/Chiquito-aventuras" target="_blank"> /Chiquito-aventuras </a>`
+      textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jogo desenvolvido para a aula de espanhol. O jogo funciona com questões alternativas onde o aluno deve selecionar a alternativa que preenche corretamente a frase conjugada no indicativo pretérito perfeito composto. No final, o aluno consegue ver quantas questões acertou no total e jogar novamente.`
+      break;
+
+    case 'kosManager':
+      titulo_pjt.textContent = `Kos Manager (TCC)`
+      img_pjt.setAttribute('src', `/img/kos-manager-1.png`)
+      tecnologias_pjt.innerHTML = ` <strong class="tecnologias-titulo">TECNOLOGIAS UTILIZADAS:&nbsp;</strong> C#, .NET, MySql, Scrum`
+      link_pjt.innerHTML = `<strong class="tecnologias-titulo">LINK REPOSITÓRIO:&nbsp;</strong> <a id="link_href" href="https://github.com/MilenaGarciaCosta/Kos-Manager" target="_blank"> /Kos-Manager </a>`
+      textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Este é meu trabalho de conclusão de curso da Etec. A proposta do projeto é ser uma ferramenta desktop com objetivo de auxiliar o gerenciamento de pequenas e médias empresas que trabalham com produtos perecíveis. O aplicativo conta com diversos módulos de gerenciamento e um dashboard atualizado em tempo real.`
+      break;
+
+    default:
+      break;
+  }
+}
