@@ -206,6 +206,7 @@ nav li {
 
 nav img {
   height: 35px;
+  cursor: not-allowed;
 }
 
 /* ASIDES GERAL */
