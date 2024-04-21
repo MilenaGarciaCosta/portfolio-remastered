@@ -1,6 +1,7 @@
 const conteudo = document.querySelector('.aside-direita');
 const botoes = document.querySelectorAll('.btn');
 const sobre_btn = document.querySelector('#sobre');
+
 const habilidades_btn = document.querySelector('#habilidades');
 const educacao_btn = document.querySelector('#educacao');
 const projetos_btn = document.querySelector('#projetos');
@@ -14,15 +15,13 @@ const vinheria_pjt = document.querySelector('.vinheria');
 const gameStore_pjt = document.querySelector('.game-store');
 const chiquito_pjt = document.querySelector('.chiquito');
 const kosManager_pjt = document.querySelector('.kos-manager');
-
 const titulo_pjt = document.querySelector('.projeto-titulo'); // textContent
 const img_pjt = document.querySelector('.img-projeto-popUp'); // setAttribute
 const tecnologias_pjt = document.querySelector('.utilizadas');// textContent
 const link_pjt = document.querySelector('.link'); // textContent
 const textoDesc_pjt = document.querySelector('.projeto-texto-desc'); // textContent
 
-// ATRIBUINDO VALORES PARA CADA ITEM DO MENU
-
+// ATRIBUINDO CONTEXTOS PARA CADA ITEM DO MENU
 sobre_btn.addEventListener('click', () => {
   alterarConteudo('sobre')
   sobre_btn.classList.add('ativo')
@@ -43,7 +42,7 @@ projetos_btn.addEventListener('click', () => {
   projetos_btn.classList.add('ativo')
 })
 
-// FUNÇÃO PARA MUDAR CONTEÚDO DE ACORDO COM QUAL MENU
+// FUNÇÃO PARA MUDAR CONTEÚDO DE ACORDO COM CONTEXTO MENU
 function alterarConteudo(contexto) {
   botoes.forEach(function (contexto) {
     contexto.classList.remove('ativo')
@@ -204,9 +203,8 @@ function alterarConteudo(contexto) {
 
 }
 
-// FUNÇÃO COPIAR E COLAR EMAIL
+// FUNÇÃO COPIAR E COLAR E-MAIL
 var emailElement = document.querySelector('.email');
-
 emailElement.addEventListener('click', function () {
   var input = document.createElement('input');
   input.setAttribute('value', emailElement.textContent);
@@ -223,6 +221,7 @@ emailElement.addEventListener('click', function () {
   })
 });
 
+// FUNÇÃO PARA INSERIR DADOS DE CADA PROJETO NO POP-UP
 function projeto_popUp(nomePjt) {
   projeto_hidden.classList.remove("hidden");
   fechar_btn.addEventListener("click", function () {
