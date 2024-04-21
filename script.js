@@ -230,7 +230,7 @@ function projeto_popUp(nomePjt) {
   switch (nomePjt) {
     case 'vinheria':
       titulo_pjt.textContent = `projeto vinheria agnello`
-      img_pjt.setAttribute('src', `img/vinheria-1.png`)
+      img_pjt.setAttribute('src', `img/vinheria-1.PNG`)
       tecnologias_pjt.innerHTML = ` <strong class="tecnologias-titulo">TECNOLOGIAS UTILIZADAS:&nbsp;</strong> HTML, CSS`
       link_pjt.innerHTML = `<strong class="tecnologias-titulo">LINK REPOSITÓRIO:&nbsp;</strong> <a id="link_href" href="https://github.com/medeirossteffany/vinheriaAngello" target="_blank"> /vinheriaAngello </a>`
       textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esse projeto foi desenvolvido para um trabalho de Front-end no meu 1° semestre de faculdade, com o intuito de criar um e-commerce para a tradicional Vinheria Agnello sem perder a essência das visitas à vinheria.`
@@ -238,7 +238,7 @@ function projeto_popUp(nomePjt) {
 
     case 'gameStore':
       titulo_pjt.textContent = `Game Store`
-      img_pjt.setAttribute('src', `img/game-store-1.png`)
+      img_pjt.setAttribute('src', `img/game-store-1.PNG`)
       tecnologias_pjt.innerHTML = ` <strong class="tecnologias-titulo">TECNOLOGIAS UTILIZADAS:&nbsp;</strong> HTML, CSS`
       link_pjt.innerHTML = `<strong class="tecnologias-titulo">LINK REPOSITÓRIO:&nbsp;</strong> <a id="link_href" href="https://github.com/MilenaGarciaCosta/Game-Store" target="_blank"> /Game-Store </a>`
       textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esse projeto foi desenvolvido para um trabalho de Front-end no meu 1° semestre de faculdade, com o intuito de criar uma loja online de artigos de tecnologia. Um projeto simples que mostra o poder do CSS!`
@@ -246,7 +246,7 @@ function projeto_popUp(nomePjt) {
 
     case 'chiquito':
       titulo_pjt.textContent = `Chiquito aventuras`
-      img_pjt.setAttribute('src', `img/chiquito-1.png`)
+      img_pjt.setAttribute('src', `img/chiquito-1.PNG`)
       tecnologias_pjt.innerHTML = ` <strong class="tecnologias-titulo">TECNOLOGIAS UTILIZADAS:&nbsp;</strong> HTML, CSS, JavaScript`
       link_pjt.innerHTML = `<strong class="tecnologias-titulo">LINK REPOSITÓRIO:&nbsp;</strong> <a id="link_href" href="https://github.com/MilenaGarciaCosta/Chiquito-aventuras" target="_blank"> /Chiquito-aventuras </a>`
       textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jogo desenvolvido para a aula de espanhol. O jogo funciona com questões alternativas onde o aluno deve selecionar a alternativa que preenche corretamente a frase conjugada no indicativo pretérito perfeito composto. No final, o aluno consegue ver quantas questões acertou no total e jogar novamente.`
@@ -254,7 +254,7 @@ function projeto_popUp(nomePjt) {
 
     case 'kosManager':
       titulo_pjt.textContent = `Kos Manager (TCC)`
-      img_pjt.setAttribute('src', `img/kos-manager-1.png`)
+      img_pjt.setAttribute('src', `img/kos-manager-1.PNG`)
       tecnologias_pjt.innerHTML = ` <strong class="tecnologias-titulo">TECNOLOGIAS UTILIZADAS:&nbsp;</strong> C#, .NET, MySql, Scrum`
       link_pjt.innerHTML = `<strong class="tecnologias-titulo">LINK REPOSITÓRIO:&nbsp;</strong> <a id="link_href" href="https://github.com/MilenaGarciaCosta/Kos-Manager" target="_blank"> /Kos-Manager </a>`
       textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Este é meu trabalho de conclusão de curso da Etec. A proposta do projeto é ser uma ferramenta desktop com objetivo de auxiliar o gerenciamento de pequenas e médias empresas que trabalham com produtos perecíveis. O aplicativo conta com diversos módulos de gerenciamento e um dashboard atualizado em tempo real.`
