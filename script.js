@@ -21,6 +21,9 @@ const tecnologias_pjt = document.querySelector('.utilizadas');// textContent
 const link_pjt = document.querySelector('.link'); // textContent
 const textoDesc_pjt = document.querySelector('.projeto-texto-desc'); // textContent
 
+const containerLinguas = document.querySelector('.linguas-container')
+const listaLinguas = document.querySelector('.lista-linguas')
+
 // ATRIBUINDO CONTEXTOS PARA CADA ITEM DO MENU
 sobre_btn.addEventListener('click', () => {
   alterarConteudo('sobre')
@@ -50,7 +53,7 @@ function alterarConteudo(contexto) {
   switch (contexto) {
     case 'sobre':
       conteudo.innerHTML = `
-            <h1>Sobre mim</h1>
+            <h1 class="sobre-tt">Sobre mim</h1>
                 <div class="conteudo">
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Olá mundo! Seja bem-vindo(a) ao meu portfólio.</p>
                     <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sou técnica em <strong>desenvolvimento de sistemas</strong> e estudante de <strong>engenharia de software</strong>. Minha paixão pela tecnologia, junto com a sua constante evolução, aumentam minha vontade de aprender novas coisas para melhorar a eficiência e qualidade de tudo que faço.</p>
@@ -60,7 +63,7 @@ function alterarConteudo(contexto) {
       break;
     case 'habilidades':
       conteudo.innerHTML = `
-            <h1>Habilidades</h1>
+            <h1 class="habilidades-tt">Habilidades</h1>
           <div class="conteudo">
             <p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atualmente tenho estudado vários
@@ -138,7 +141,7 @@ function alterarConteudo(contexto) {
       break;
     case 'educacao':
       conteudo.innerHTML = `
-            <h1>Educação</h1>
+            <h1 class="educacao-tt">Educação</h1>
           <div class="conteudo">
             <section class="grid gap">
               <div class="educacao-container">
@@ -173,7 +176,7 @@ function alterarConteudo(contexto) {
       break;
     case 'projetos':
       conteudo.innerHTML = `
-            <h1>Projetos</h1>
+            <h1 class="pjt-tt">Projetos</h1>
           <div class="conteudo grid">
           <div onclick="projeto_popUp('kosManager')" class="projetos-container sombra-container kos-manager">
               <img src="img/kos-manager-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
@@ -264,3 +267,30 @@ function projeto_popUp(nomePjt) {
       break;
   }
 }
+
+containerLinguas.addEventListener('click', () => {
+  listaLinguas.classList.toggle('hidden')
+})
+
+// TRADUÇÃO
+
+$(function() {
+  // NAV BAR
+  $('.br').click(function() {
+    $(".menu-id").children().eq(0).text("Sobre");
+    $(".menu-id").children().eq(1).text("Habilidades");
+    $(".menu-id").children().eq(2).text("Educação");
+    $(".menu-id").children().eq(3).text("Projetos");
+    
+  })  
+})
+
+$(function() {
+  $('.en').click(function() {
+    $(".menu-id").children().eq(0).text("About");
+    $(".menu-id").children().eq(1).text("Skills");
+    $(".menu-id").children().eq(2).text("Education");
+    $(".menu-id").children().eq(3).text("Projects");
+
+  })
+})

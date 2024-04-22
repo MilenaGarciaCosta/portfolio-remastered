@@ -206,9 +206,22 @@ nav li {
 
 nav img {
   height: 35px;
-  cursor: not-allowed;
 }
 
+/* LINGUAS */
+
+.lista-linguas{
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  background-color: var(--verde-container-secundario);
+  border-radius: 0 8px 8px 8px;
+  margin-top: 0.9vh;
+}
+
+.lingua{
+  padding: 0.5vh 1.3vw;
+}
 /* ASIDES GERAL */
 
 section {

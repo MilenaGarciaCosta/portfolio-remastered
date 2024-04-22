@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icone-M.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
     <script src="script.js" defer></script>
     <title>Milena Garcia</title>
   </head>
@@ -39,12 +40,17 @@
     <div class="main-body">
       <nav>
         <div class="nav-container sombra-container">
-          <ul>
+          <ul class="menu-id">
             <li id="sobre" class="btn ativo">Sobre</li>
             <li id="habilidades" class="btn">Habilidades</li>
             <li id="educacao" class="btn">Educação</li>
             <li id="projetos" class="btn">Projetos</li>
-            <li><img src="img/traduzir-icon.png" title="Em construção" alt="traduzir site" /></li>
+            <li class="linguas-container"><img src="img/traduzir-icon.png" alt="traduzir site" />
+              <ul class="lista-linguas hidden">
+                <li class="lingua"><a class="br">Português</a></li>
+                <li class="lingua"><a class="en">Inglês</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
@@ -83,19 +89,7 @@
         </aside>
 
         <aside class="aside-direita sombra-container">
-          <h1>Sobre mim</h1>
-          <div class="conteudo">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Olá mundo! Seja bem-vindo(a) ao meu portfólio.</p>
-            <p class="margem-p">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sou técnica em
-              <strong>desenvolvimento de sistemas</strong> e estudante de <strong> engenharia de software</strong>. Minha paixão pela
-              tecnologia, junto com a sua constante evolução, aumentam minha vontade de aprender novas coisas para melhorar a eficiência e qualidade de tudo que faço.
-            </p>
-            <p class="margem-p">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atualmente <strong> busco pela minha primeira oportunidade de estágio</strong>, onde vou aprender e aprimorar habilidades. Caso se interesse,
-              entre em contato!
-            </p>
-          </div>
+          
         </aside>
       </section>
     </div>
