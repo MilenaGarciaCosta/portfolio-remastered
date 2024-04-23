@@ -233,7 +233,7 @@ function projeto_popUp(nomePjt) {
       img_pjt.setAttribute('src', `img/vinheria-1.PNG`)
       tecnologias_pjt.innerHTML = ` <strong class="tecnologias-titulo">TECNOLOGIAS UTILIZADAS:&nbsp;</strong> HTML, CSS`
       link_pjt.innerHTML = `<strong class="tecnologias-titulo">LINK REPOSITÓRIO:&nbsp;</strong> <a id="link_href" href="https://github.com/medeirossteffany/vinheriaAngello" target="_blank"> /vinheriaAngello </a>`
-      textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esse projeto foi desenvolvido para um trabalho de Front-end no meu 1° semestre de faculdade, com o intuito de criar um e-commerce para a tradicional Vinheria Agnello sem perder a essência das visitas à vinheria.`
+      textoDesc_pjt.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esse projeto foi desenvolvido para um trabalho de Front-end no meu 1° semestre de faculdade, com o intuito de criar um e-commerce para a tradicional Vinheria Agnello sem perder a essência do atendimento presencial.`
       break;
 
     case 'gameStore':
