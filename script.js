@@ -1,12 +1,12 @@
+const alerta_hidden = document.querySelector('.transferencia_func');
+const button = document.querySelector('#button');
 const conteudo = document.querySelector('.aside-direita');
 const botoes = document.querySelectorAll('.btn');
-const sobre_btn = document.querySelector('#sobre');
 
+const sobre_btn = document.querySelector('#sobre');
 const habilidades_btn = document.querySelector('#habilidades');
 const educacao_btn = document.querySelector('#educacao');
 const projetos_btn = document.querySelector('#projetos');
-const alerta_hidden = document.querySelector('.transferencia_func');
-const button = document.querySelector('#button');
 
 const projeto_hidden = document.querySelector(".projeto_func");
 const projeto_container_btn = document.querySelectorAll(".projetos-container");
@@ -17,7 +17,7 @@ const chiquito_pjt = document.querySelector('.chiquito');
 const kosManager_pjt = document.querySelector('.kos-manager');
 const titulo_pjt = document.querySelector('.projeto-titulo'); // textContent
 const img_pjt = document.querySelector('.img-projeto-popUp'); // setAttribute
-const tecnologias_pjt = document.querySelector('.utilizadas');// textContent
+const tecnologias_pjt = document.querySelector('.utilizadas'); // textContent
 const link_pjt = document.querySelector('.link'); // textContent
 const textoDesc_pjt = document.querySelector('.projeto-texto-desc'); // textContent
 
@@ -53,157 +53,156 @@ function alterarConteudo(contexto) {
   switch (contexto) {
     case 'sobre':
       conteudo.innerHTML = `
-            <h1 class="sobre-tt">Sobre mim</h1>
-                <div class="conteudo">
-                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Olá mundo! Seja bem-vindo(a) ao meu portfólio.</p>
-                    <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sou técnica em <strong>desenvolvimento de sistemas</strong> e estudante de <strong>engenharia de software</strong>. Minha paixão pela tecnologia, junto com a sua constante evolução, aumentam minha vontade de aprender novas coisas para melhorar a eficiência e qualidade de tudo que faço.</p>
-                    <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atualmente <strong>busco pela minha primeira oportunidade de estágio</strong>, onde vou aprender e aprimorar habilidades. Caso se interesse, entre em contato!</p>
-                </div>
-            `
+        <h1 class="sobre-tt">Sobre mim</h1>
+            <div class="conteudo">
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Olá mundo! Seja bem-vindo(a) ao meu portfólio.</p>
+                <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sou técnica em <strong>desenvolvimento de sistemas</strong> e estudante de <strong>engenharia de software</strong>. Minha paixão pela tecnologia, junto com a sua constante evolução, aumentam minha vontade de aprender novas coisas para melhorar a eficiência e qualidade de tudo que faço.</p>
+                <p class="margem-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atualmente <strong>busco pela minha primeira oportunidade de estágio</strong>, onde vou aprender e aprimorar habilidades. Caso se interesse, entre em contato!</p>
+            </div>
+        `
       break;
     case 'habilidades':
       conteudo.innerHTML = `
-            <h1 class="habilidades-tt">Habilidades</h1>
-          <div class="conteudo">
+        <h1 class="habilidades-tt">Habilidades</h1>
+      <div class="conteudo">
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atualmente tenho estudado vários
+          assuntos para descobrir onde me encaixo e me desenvolvo melhor.
+          Aqui vou apresentar minhas habilidades principais:
+        </p>
+        <section class="grid">
+          <div class="container-habilidades escuro">
+            <div class="titulo-habilidades">
+              <img src="img/ingles.png" alt="inglês" />
+              <h5>Inglês como segunda língua</h5>
+            </div>
             <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atualmente tenho estudado vários
-              assuntos para descobrir onde me encaixo e me desenvolvo melhor.
-              Aqui vou apresentar minhas habilidades principais:
+              &nbsp;&nbsp; Sou brasileira com inglês avançado como segunda
+              língua.
             </p>
-            <section class="grid">
-              <div class="container-habilidades escuro">
-                <div class="titulo-habilidades">
-                  <img src="img/ingles.png" alt="inglês" />
-                  <h5>Inglês como segunda língua</h5>
-                </div>
-                <p>
-                  &nbsp;&nbsp; Sou brasileira com inglês avançado como segunda
-                  língua.
-                </p>
-              </div>
-
-              <div class="container-habilidades claro">
-                <div class="titulo-habilidades">
-                  <img src="img/web-dev.png" alt="desenvolvimento web" />
-                  <h5>Desenvolvimento web</h5>
-                </div>
-                <p>
-                  &nbsp;&nbsp; HTML5, CSS3, JavaScript, Bootstrap e Tailwind.
-                </p>
-              </div>
-
-              <div class="container-habilidades escuro">
-                <div class="titulo-habilidades">
-                  <img src="img/branch.png" alt="inglês" />
-                  <h5>Versionamento de projetos</h5>
-                </div>
-                <p>
-                  &nbsp;&nbsp; Utilizo a plataforma GitHub para auxiliar no
-                  versionamento dos meus projetos.
-                </p>
-              </div>
-
-              <div class="container-habilidades claro">
-                <div class="titulo-habilidades">
-                  <img src="img/banco-de-dados.png" alt="desenvolvimento web" />
-                  <h5>Banco de dados</h5>
-                </div>
-                <p>
-                  &nbsp;&nbsp; Tenho conhecimento intermediário de banco de
-                  dados com MySql Worckbench.
-                </p>
-              </div>
-
-              <div class="container-habilidades escuro">
-                <div class="titulo-habilidades">
-                  <img src="img/scrum.png" alt="inglês" />
-                  <h5>Metodologias ágeis</h5>
-                </div>
-                <p>
-                  &nbsp;&nbsp; Utilizei a metodologia Scrum para melhorar a
-                  eficiência do meu TCC.
-                </p>
-              </div>
-
-              <div class="container-habilidades claro">
-                <div class="titulo-habilidades">
-                  <img src="img/acessibilidade.png" alt="desenvolvimento web" />
-                  <h5>Design acessivel</h5>
-                </div>
-                <p>
-                  &nbsp;&nbsp; Utilizo mobile-first para
-                  melhorar a responsividade e acessibilidade.
-                </p>
-              </div>
-            </section>
           </div>
-            `
+
+          <div class="container-habilidades claro">
+            <div class="titulo-habilidades">
+              <img src="img/web-dev.png" alt="desenvolvimento web" />
+              <h5>Desenvolvimento web</h5>
+            </div>
+            <p>
+              &nbsp;&nbsp; HTML5, CSS3, JavaScript, Bootstrap e Tailwind.
+            </p>
+          </div>
+
+          <div class="container-habilidades escuro">
+            <div class="titulo-habilidades">
+              <img src="img/branch.png" alt="inglês" />
+              <h5>Versionamento de projetos</h5>
+            </div>
+            <p>
+              &nbsp;&nbsp; Utilizo a plataforma GitHub para auxiliar no
+              versionamento dos meus projetos.
+            </p>
+          </div>
+
+          <div class="container-habilidades claro">
+            <div class="titulo-habilidades">
+              <img src="img/banco-de-dados.png" alt="desenvolvimento web" />
+              <h5>Banco de dados</h5>
+            </div>
+            <p>
+              &nbsp;&nbsp; Tenho conhecimento intermediário de banco de
+              dados com MySql Worckbench.
+            </p>
+          </div>
+
+          <div class="container-habilidades escuro">
+            <div class="titulo-habilidades">
+              <img src="img/scrum.png" alt="inglês" />
+              <h5>Metodologias ágeis</h5>
+            </div>
+            <p>
+              &nbsp;&nbsp; Utilizei a metodologia Scrum para melhorar a
+              eficiência do meu TCC.
+            </p>
+          </div>
+
+          <div class="container-habilidades claro">
+            <div class="titulo-habilidades">
+              <img src="img/acessibilidade.png" alt="desenvolvimento web" />
+              <h5>Design acessivel</h5>
+            </div>
+            <p>
+              &nbsp;&nbsp; Utilizo mobile-first para
+              melhorar a responsividade e acessibilidade.
+            </p>
+          </div>
+        </section>
+      </div>
+        `
       break;
     case 'educacao':
       conteudo.innerHTML = `
-            <h1 class="educacao-tt">Educação</h1>
-          <div class="conteudo">
-            <section class="grid gap">
-              <div class="educacao-container">
-                <img src="img/side-line.png" alt="">
-                <div>
-                  <p class="titulo">Etec Ermelinda</p>
-                  <p class="descricao-titulo">Curso técnico de Desenvolvimento de Sistemas</p>
-                  <p class="periodo-educacao">2021 - 2023</p>
-                </div>
-              </div>
-
-              <div class="educacao-container">
-                <img src="img/side-line.png" alt="">
-                <div>
-                  <p class="titulo">FIAP</p>
-                  <p class="descricao-titulo">Bacharelado em Engenharia de Software</p>
-                  <p class="periodo-educacao">2024 - 2027</p>
-                </div>
-              </div>
-
-              <div class="educacao-container">
-                <img src="img/side-line.png" alt="">
-                <div>
-                  <p class="titulo">Excellent Global</p>
-                  <p class="descricao-titulo">Curso de inglês (A1 ao C2)</p>
-                  <p class="periodo-educacao">2016 - 2021</p>
-                </div>
-              </div>
-            </section>
+        <h1 class="educacao-tt">Educação</h1>
+      <div class="conteudo">
+        <section class="grid gap">
+          <div class="educacao-container">
+            <img src="img/side-line.png" alt="">
+            <div>
+              <p class="titulo">Etec Ermelinda</p>
+              <p class="descricao-titulo">Curso técnico de Desenvolvimento de Sistemas</p>
+              <p class="periodo-educacao">2021 - 2023</p>
+            </div>
           </div>
-            `
+
+          <div class="educacao-container">
+            <img src="img/side-line.png" alt="">
+            <div>
+              <p class="titulo">FIAP</p>
+              <p class="descricao-titulo">Bacharelado em Engenharia de Software</p>
+              <p class="periodo-educacao">2024 - 2027</p>
+            </div>
+          </div>
+
+          <div class="educacao-container">
+            <img src="img/side-line.png" alt="">
+            <div>
+              <p class="titulo">Excellent Global</p>
+              <p class="descricao-titulo">Curso de inglês (A1 ao C2)</p>
+              <p class="periodo-educacao">2016 - 2021</p>
+            </div>
+          </div>
+        </section>
+      </div>
+        `
       break;
     case 'projetos':
       conteudo.innerHTML = `
-            <h1 class="pjt-tt">Projetos</h1>
-          <div class="conteudo grid">
-          <div onclick="projeto_popUp('kosManager')" class="projetos-container sombra-container kos-manager">
-              <img src="img/kos-manager-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
-              <h5 class="titulo">Kos Manager (TCC)</h5>
-            </div>
+        <h1 class="pjt-tt">Projetos</h1>
+      <div class="conteudo grid">
+      <div onclick="projeto_popUp('kosManager')" class="projetos-container sombra-container kos-manager">
+          <img src="img/kos-manager-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
+          <h5 class="titulo">Kos Manager (TCC)</h5>
+        </div>
 
-            <div onclick="projeto_popUp('chiquito')" class="projetos-container sombra-container chiquito">
-              <img src="img/chiquito-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
-              <h5 class="titulo">Chiquito aventuras</h5>
-            </div>
+        <div onclick="projeto_popUp('chiquito')" class="projetos-container sombra-container chiquito">
+          <img src="img/chiquito-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
+          <h5 class="titulo">Chiquito aventuras</h5>
+        </div>
 
-            <div onclick="projeto_popUp('gameStore')" class="projetos-container sombra-container game-store">
-              <img src="img/game-store-2.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
-              <h5 class="titulo">Game Store</h5>
-            </div>
+        <div onclick="projeto_popUp('gameStore')" class="projetos-container sombra-container game-store">
+          <img src="img/game-store-2.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
+          <h5 class="titulo">Game Store</h5>
+        </div>
 
-            <div onclick="projeto_popUp('vinheria')" class="projetos-container sombra-container vinheria">
-              <img src="img/vinheria-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
-              <h5 class="titulo">Vinheria Agnello</h5>
-            </div>
-          </div>
-            `
+        <div onclick="projeto_popUp('vinheria')" class="projetos-container sombra-container vinheria">
+          <img src="img/vinheria-1.PNG" alt="" class="img-projeto" alt="imagem do projeto"/>
+          <h5 class="titulo">Vinheria Agnello</h5>
+        </div>
+      </div>
+        `
       break;
     default:
       break;
   }
-
 }
 
 // FUNÇÃO COPIAR E COLAR E-MAIL
@@ -274,23 +273,28 @@ containerLinguas.addEventListener('click', () => {
 
 // TRADUÇÃO
 
-$(function() {
-  // NAV BAR
-  $('.br').click(function() {
+function mostrarMensagem(idioma) {
+  if (idioma === "br") {
     $(".menu-id").children().eq(0).text("Sobre");
     $(".menu-id").children().eq(1).text("Habilidades");
     $(".menu-id").children().eq(2).text("Educação");
     $(".menu-id").children().eq(3).text("Projetos");
-    
-  })  
-})
 
-$(function() {
-  $('.en').click(function() {
+  } else if (idioma === "en") {
     $(".menu-id").children().eq(0).text("About");
     $(".menu-id").children().eq(1).text("Skills");
     $(".menu-id").children().eq(2).text("Education");
     $(".menu-id").children().eq(3).text("Projects");
 
-  })
-})
+  }
+}
+
+document.querySelectorAll(".lingua").forEach(function (elemento) {
+  elemento.addEventListener("change", function () {
+    // Verifica qual idioma foi selecionado
+    if (this.checked) {
+      const idiomaSelecionado = this.classList.contains("br") ? "br" : "en";
+      mostrarMensagem(idiomaSelecionado);
+    }
+  });
+});

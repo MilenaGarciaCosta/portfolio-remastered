@@ -219,9 +219,13 @@ nav img {
   margin-top: 0.9vh;
 }
 
-.lingua{
-  padding: 0.5vh 1.3vw;
+.lingua-row{
+  padding: 0.7vh 1vw;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
 }
+
 /* ASIDES GERAL */
 
 section {
