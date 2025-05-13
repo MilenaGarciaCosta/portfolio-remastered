@@ -1,18 +1,18 @@
 import { NavLink } from "react-router-dom"
+import "../styles/nav.css"
+
+import CustomNavLink from "./CustomNavLink.jsx"
 
 const Nav =()=> {
-    const activeStyle = {
-        fontWeight: 'bold',
-        textDecoration: 'underline',
-    }
-
     return (
-        <nav>
-            <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Sobre</NavLink>
-            <NavLink to="/habilidades" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Habilidades</NavLink>
-            <NavLink to="/educacao" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Educação</NavLink>
-            <NavLink to="/projetos" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Projetos</NavLink>
-        </nav>
+        <section id="nav_container">
+            <nav className="sombra-container">
+                <CustomNavLink to="/">Sobre</CustomNavLink>
+                <CustomNavLink to="/habilidades">Habilidades</CustomNavLink>
+                <CustomNavLink to="/educacao">Educação</CustomNavLink>
+                <CustomNavLink to="/projetos">Projetos</CustomNavLink>
+            </nav>
+        </section>
     )
 }
 

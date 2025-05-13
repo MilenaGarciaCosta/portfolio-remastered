@@ -1,0 +1,28 @@
+@import "main.css";
+
+/* Links da navbar */
+#nav_container{
+    display: flex;
+    justify-content: end;
+}
+
+.nav-link{
+    cursor: pointer;
+    list-style: none;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.nav-link.active{
+    background-color: var(--verde-habilidades);
+    border-radius: 5px;
+    color: var(--verde-container);
+}
+
+/* Container navbar */
+nav{
+    background-color: var(--verde-container);
+    padding: 13px 5px;
+    border-radius: 8px;
+}
