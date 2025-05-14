@@ -1,13 +1,19 @@
 import "../styles/sidebar.css"
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { copiarEmail } from "../scripts/sidebar.js"
 
 import FotoPerfil from "../assets/foto-perfil.png"
 import DowloadIcon from "../assets/instalar.png"
 
 const Sidebar =()=> {
+    useEffect(() =>{
+        copiarEmail()
+    }, [])
+
     return(
         <aside id="section_container" className="sombra-container">
-             <img id="foto_perfil" alt="Foto de perfil" src={FotoPerfil} />
+            <img id="foto_perfil" alt="Foto de perfil" src={FotoPerfil} />
             <div className="ajuste_altura_aside">            
                 <h2>Milena Garcia</h2>
                 <h3 id="role_name">Engenheira de Software</h3>
@@ -33,11 +39,17 @@ const Sidebar =()=> {
                             <h4 className="titulo_informacao" id="curriculo_titulo">Currículo</h4>
                             <img src={DowloadIcon} alt="Instalar currículo" /> 
                         </div>
-                        <Link className="link_informacao" id="curriculo_link">Clique para instalar</Link>
+                        <Link className="link_informacao" to="../assets/files/" download id="curriculo_link">Clique para instalar</Link>
                     </div>
-                    <Link className="link_informacao"></Link>
                 </div>
             </div>
+            
+            <section id="alerta_hidden" className="alerta_hidden hidden">
+                <div id="alerta_conteudo" className="sombra-container">
+                    <p>Enviado para a área de transferência</p>
+                    <button id="fechar_alerta">Fechar</button>
+                </div>
+            </section>
         </aside>
     )
 }
