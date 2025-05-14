@@ -43,22 +43,27 @@
 
 /* Body */
 body {
-    background: linear-gradient(
-    45deg,
-    rgb(39, 71, 55) 25%,
-    rgb(90, 129, 88) 60%,
-    rgb(202, 243, 187) 100%
-    );
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: 200% 200%;
-    animation: color 8s ease-in-out infinite;
+  background: linear-gradient(
+  45deg,
+  rgb(39, 71, 55) 25%,
+  rgb(90, 129, 88) 60%,
+  rgb(202, 243, 187) 100%
+  );
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 200% 200%;
+  animation: color 8s ease-in-out infinite;
 }
+
+#main_container{
+  width: 85vw;
+}
+
 
 /* Animação da cor de fundo do body*/
 @keyframes color {
@@ -76,12 +81,12 @@ body {
 /* Estáticos */
 /* Bloqueio de seleção de elementos */
 img, .titulo{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Generalizadas */
@@ -89,4 +94,12 @@ img, .titulo{
   -webkit-box-shadow: 0px 0px 18px -7px var(--verde-escuro);
   -moz-box-shadow: 0px 0px 18px -7px var(--verde-escuro);
   box-shadow: 0px 0px 18px -7px var(--verde-escuro);
+}
+
+/* Organização da parte abaixo do nav */
+#bottom_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 70px;
 }

@@ -1,0 +1,79 @@
+@import "./main.css";
+
+/* Estruturação*/
+#foto_perfil{
+    height: 160px;
+    position: relative;
+    top: -83px;
+}
+
+#section_container{
+    background-color: var(--verde-container);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#section_container, .ajuste_altura_aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ajuste_altura_aside{
+    position: relative;
+    top: -80px;
+}
+
+#informacoes_container{
+    background-color: var(--verde-container-secundario);
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.margin_bottom_link{
+    margin-bottom: 20px;
+}
+
+/* Ajustes de texto */
+.ajuste_altura_aside h2{
+    font-family: var(--fonte-titulos);
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#role_name{
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+
+.titulo_informacao{
+    font-family: var(--fonte-titulos);
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.link_informacao{
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link_informacao:hover{
+    text-decoration: underline var(--verde-escuro);
+}
+
+#curriculo_container{
+    display: flex;
+}
+
+#curriculo_container img{
+    height: 18px;
+    margin-left: 5px;
+}

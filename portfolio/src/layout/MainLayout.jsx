@@ -6,18 +6,21 @@ import Sidebar from "../components/Sidebar.jsx"
 
 const MainLayout =()=> {
     return(
-        <main id="main_layout">
+        <main id="main_container">
             <section id=" navbar">
                 <Nav/>
             </section>
-            
-            <section id="sidebar">
-                <Sidebar/>
-            </section>
 
-            <section id="conteudo_container">
-                <Outlet/> {/* Conteúdo dinâmico */}
-            </section>
+            <div id="bottom_container">
+                <section id="sidebar">
+                    <Sidebar/>
+                </section>
+
+                <section id="conteudo_container">
+                    <Outlet/> {/* Conteúdo dinâmico */}
+                </section>
+            </div>
+
         </main>
     )
 }

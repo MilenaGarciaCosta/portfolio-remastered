@@ -1,8 +1,44 @@
+import "../styles/sidebar.css"
+import { Link } from "react-router-dom";
+
+import FotoPerfil from "../assets/foto-perfil.png"
+import DowloadIcon from "../assets/instalar.png"
+
 const Sidebar =()=> {
     return(
-        <>
-        <h1>Side Bar maroto</h1>
-        </>
+        <aside id="section_container" className="sombra-container">
+             <img id="foto_perfil" alt="Foto de perfil" src={FotoPerfil} />
+            <div className="ajuste_altura_aside">            
+                <h2>Milena Garcia</h2>
+                <h3 id="role_name">Engenheira de Software</h3>
+
+                <div id="informacoes_container">
+                    <div>
+                        <h4 className="titulo_informacao">E-mail</h4>
+                        <Link className="link_informacao" id="email">milenagarcia.dev@gmail.com</Link>
+                    </div>
+                    
+                    <div>
+                        <h4 className="titulo_informacao">Github</h4>
+                        <Link to="https://github.com/MilenaGarciaCosta" target="_blank" className="link_informacao">/MilenaGarciaCosta</Link>
+                    </div> 
+                    
+                    <div>
+                        <h4 className="titulo_informacao">Linkedin</h4>
+                        <Link to="https://www.linkedin.com/in/milena-garcia-605931256/" target="_blank" className="link_informacao">milena-garcia-605931256/</Link>
+                    </div>
+
+                    <div>
+                        <div id="curriculo_container">
+                            <h4 className="titulo_informacao" id="curriculo_titulo">Currículo</h4>
+                            <img src={DowloadIcon} alt="Instalar currículo" /> 
+                        </div>
+                        <Link className="link_informacao" id="curriculo_link">Clique para instalar</Link>
+                    </div>
+                    <Link className="link_informacao"></Link>
+                </div>
+            </div>
+        </aside>
     )
 }
 
