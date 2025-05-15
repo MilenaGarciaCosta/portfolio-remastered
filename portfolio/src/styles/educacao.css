@@ -1,0 +1,21 @@
+@import "../styles/main.css";
+
+#educacao_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+    align-items: center;
+}
+
+.educacao_card{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid var(--verde-escuro);
+    padding: 10px;
+    height: 80%;
+}
+
+.educacao_card p{
+    text-align: left;
+}
