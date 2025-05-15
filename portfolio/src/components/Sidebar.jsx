@@ -12,7 +12,7 @@ const Sidebar =()=> {
     }, [])
 
     return(
-        <aside id="section_container" className="sombra-container">
+        <aside id="section_container" className="sombra-container altura">
             <img id="foto_perfil" alt="Foto de perfil" src={FotoPerfil} />
             <div className="ajuste_altura_aside">            
                 <h2>Milena Garcia</h2>

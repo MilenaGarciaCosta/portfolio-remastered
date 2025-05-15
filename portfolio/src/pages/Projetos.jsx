@@ -1,6 +1,10 @@
+import PageWrap from "../layout/PageWrap.jsx"
+
 const Projetos =()=>{
     return(
-        <h1>Projetos aqui</h1>
+        <PageWrap id="titulo_projetos" titulo="Projetos">
+            
+        </PageWrap>
     )
 }
 

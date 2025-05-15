@@ -1,6 +1,10 @@
+import PageWrap from "../layout/PageWrap.jsx"
+
 const Habilidades =()=>{
     return(
-        <h1>Habilidades aqui</h1>
+        <PageWrap id="titulo_habilidades" titulo="Habilidades">
+            
+        </PageWrap>
     )
 }
 

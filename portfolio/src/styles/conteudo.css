@@ -1,0 +1,15 @@
+@import "main.css";
+
+.conteudo_container{
+    overflow: auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.titulo_conteudo{
+    font-family: var(--fonte-titulos);
+    font-size: 37px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 30px 0;
+}

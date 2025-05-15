@@ -1,6 +1,10 @@
+import PageWrap from "../layout/PageWrap.jsx"
+
 const Educacao =()=>{
     return(
-        <h1>Educação aqui</h1>
+        <PageWrap id="titulo_educacao" titulo="Educação">
+            
+        </PageWrap>
     )
 }
 
