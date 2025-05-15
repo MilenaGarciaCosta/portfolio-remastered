@@ -20,7 +20,6 @@ const MainLayout = () => {
                     <Outlet /> {/* Conteúdo dinâmico */}
                 </section>
             </div>
-
         </main>
     )
 }

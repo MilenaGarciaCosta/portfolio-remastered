@@ -5,18 +5,20 @@ import InglesIcon from "../assets/ingles.png"
 import WebDev from "../assets/web-dev.png"
 import Branch from "../assets/branch.png"
 import Scrum from "../assets/scrum.png"
+import SqlLogo from "../assets/banco-de-dados.png"
+import OutrasTech from "../assets/outras-tech.png"
 
 const Habilidades = () => {
     return (
         <PageWrap id="titulo_habilidades" titulo="Habilidades">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp; Gosto de explorar diversas vertentes. Aqui apresento minhas habilidades principais.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; Gosto de explorar novas tecnologias e estou sempre estudando para evoluir como desenvolvedora. Aqui estão algumas das habilidades que venho aprimorando ao longo da minha jornada.</p>
             <section id="habilidades_container">
                 <div class="card_habilidade escuro">
                     <div className="titulo_card_habilidade">
                         <img src={InglesIcon} alt="icone habilidade" />
                         <h4>Inglês como segunda língua</h4>
                     </div>
-                    <p>Inglês avançado como segunda língua.</p>
+                    <p>Inglês avançado como segunda língua, permitindo leitura, escrita e comunicação técnica.</p>
                 </div>
 
                 <div class="card_habilidade claro">
@@ -24,7 +26,7 @@ const Habilidades = () => {
                         <img src={WebDev} alt="icone habilidade" />
                         <h4>Desenvolvimento web</h4>
                     </div>
-                    <p>React, JavaScript, Node.js, Tailwind, HTML5, CSS3, Django etc.</p>
+                    <p>Experiência com React, JavaScript, Node.js, Tailwind, HTML, CSS, Django etc.</p>
                 </div>
 
                 <div class="card_habilidade escuro">
@@ -32,7 +34,7 @@ const Habilidades = () => {
                         <img src={Branch} alt="icone habilidade" />
                         <h4>Versionamento de projetos</h4>
                     </div>
-                    <p>Utilizo Git para manter o versionamento dos meus projetos.</p>
+                    <p>Utilizo Git e GitHub nos meus projetos, mantendo o controle de versões.</p>
                 </div>
 
                 <div class="card_habilidade grid claro">
@@ -40,23 +42,23 @@ const Habilidades = () => {
                         <img src={Scrum} alt="icone habilidade" />
                         <h4>Metodologias ágeis</h4>
                     </div>
-                    <p></p>
+                    <p>Familiaridade com Scrum e Kanban, aplicada em projetos acadêmicos.</p>
                 </div>
 
                 <div class="card_habilidade grid escuro">
                 <div className="titulo_card_habilidade">
-                        <img src="" alt="icone habilidade" />
-                        <h4></h4>
+                        <img src={SqlLogo} alt="icone habilidade" />
+                        <h4>Banco de Dados</h4>
                     </div>
-                    <p></p>
+                    <p>Conhecimento em bancos relacionais e prática com SQL em projetos integrados ao back-end.</p>
                 </div>
 
                 <div class="card_habilidade grid claro">
                 <div className="titulo_card_habilidade">
-                        <img src="" alt="icone habilidade" />
-                        <h4></h4>
+                        <img src={OutrasTech} alt="icone habilidade" />
+                        <h4>Outras Tecnologias</h4>
                     </div>
-                    <p></p>
+                    <p>Experiência com Python, Selenium, C# e Java em projetos diversos.</p>
                 </div>
             </section>
         </PageWrap>
