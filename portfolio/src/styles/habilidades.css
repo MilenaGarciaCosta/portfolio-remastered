@@ -1,0 +1,53 @@
+@import "main.css";
+
+/* Cor de fundo dos cards */
+.escuro {
+    background-color: var(--verde-habilidades);
+}
+
+.claro{
+    background-color: var(--cinza-habilidades);
+}
+
+.grid{
+    grid-row-start: 2;
+}
+
+#habilidades_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1.3vw;
+    row-gap: 2vh;
+    margin-top: 20px;
+}
+
+.card_habilidade{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.titulo_card_habilidade{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo_card_habilidade img{
+    height: 4.5vh;
+}
+
+.titulo_card_habilidade h4{
+    font-family: var(--fonte-titulos);
+    font-weight: 600;
+    font-size: 19px;
+    margin-left: 8px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.card_habilidade p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 6px;
+}
