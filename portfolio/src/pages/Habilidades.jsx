@@ -13,7 +13,7 @@ const Habilidades = () => {
         <PageWrap id="titulo_habilidades" titulo="Habilidades">
             <p>&nbsp;&nbsp;&nbsp;&nbsp; Gosto de explorar novas tecnologias e estou sempre estudando para evoluir como desenvolvedora. Aqui estão algumas das habilidades que venho aprimorando ao longo da minha jornada.</p>
             <section id="habilidades_container">
-                <div class="card_habilidade escuro">
+                <div className="card_habilidade escuro">
                     <div className="titulo_card_habilidade">
                         <img src={InglesIcon} alt="icone habilidade" />
                         <h4>Inglês como segunda língua</h4>
@@ -21,7 +21,7 @@ const Habilidades = () => {
                     <p>Inglês avançado como segunda língua, permitindo leitura, escrita e comunicação técnica.</p>
                 </div>
 
-                <div class="card_habilidade claro">
+                <div className="card_habilidade claro">
                 <div className="titulo_card_habilidade">
                         <img src={WebDev} alt="icone habilidade" />
                         <h4>Desenvolvimento web</h4>
@@ -29,7 +29,7 @@ const Habilidades = () => {
                     <p>Experiência com React, JavaScript, Node.js, Tailwind, HTML, CSS, Django etc.</p>
                 </div>
 
-                <div class="card_habilidade escuro">
+                <div className="card_habilidade escuro">
                 <div className="titulo_card_habilidade">
                         <img src={Branch} alt="icone habilidade" />
                         <h4>Versionamento de projetos</h4>
@@ -37,7 +37,7 @@ const Habilidades = () => {
                     <p>Utilizo Git e GitHub nos meus projetos, mantendo o controle de versões.</p>
                 </div>
 
-                <div class="card_habilidade grid claro">
+                <div className="card_habilidade grid claro">
                 <div className="titulo_card_habilidade">
                         <img src={Scrum} alt="icone habilidade" />
                         <h4>Metodologias ágeis</h4>
@@ -45,7 +45,7 @@ const Habilidades = () => {
                     <p>Familiaridade com Scrum e Kanban, aplicada em projetos acadêmicos.</p>
                 </div>
 
-                <div class="card_habilidade grid escuro">
+                <div className="card_habilidade grid escuro">
                 <div className="titulo_card_habilidade">
                         <img src={SqlLogo} alt="icone habilidade" />
                         <h4>Banco de Dados</h4>
@@ -53,7 +53,7 @@ const Habilidades = () => {
                     <p>Conhecimento em bancos relacionais e prática com SQL em projetos integrados ao back-end.</p>
                 </div>
 
-                <div class="card_habilidade grid claro">
+                <div className="card_habilidade grid claro">
                 <div className="titulo_card_habilidade">
                         <img src={OutrasTech} alt="icone habilidade" />
                         <h4>Outras Tecnologias</h4>
