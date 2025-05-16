@@ -28,9 +28,9 @@
 
 /* Scroll bar */
 *::-webkit-scrollbar {
-    width: 10px;
-  }
-  
+  width: 10px;
+}
+
 *::-webkit-scrollbar-track {
   background: var(--cinza-habilidades);
 }
@@ -43,12 +43,10 @@
 
 /* Body */
 body {
-  background: linear-gradient(
-  45deg,
-  rgb(39, 71, 55) 25%,
-  rgb(90, 129, 88) 60%,
-  rgb(202, 243, 187) 100%
-  );
+  background: linear-gradient(45deg,
+      rgb(39, 71, 55) 25%,
+      rgb(90, 129, 88) 60%,
+      rgb(202, 243, 187) 100%);
   background-attachment: fixed;
   height: 100vh;
   width: 100vw;
@@ -60,26 +58,29 @@ body {
   animation: color 8s ease-in-out infinite;
 }
 
-#main_container{
+#main_container {
   width: 85vw;
 }
 
 /* Animação da cor de fundo do body*/
 @keyframes color {
-    0% {
-      background-position: 0 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0 50%;
-    }
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 /* Estáticos */
 /* Bloqueio de seleção de elementos */
-img, .titulo{
+img,
+.titulo {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -95,8 +96,16 @@ img, .titulo{
   box-shadow: 0px 0px 18px -7px var(--verde-escuro);
 }
 
+.blur-container {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  -o-backdrop-filter: blur(5px);
+  -ms-backdrop-filter: blur(5px);
+}
+
 /* Organização da parte abaixo do nav */
-#bottom_container{
+#bottom_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,7 +113,7 @@ img, .titulo{
 }
 
 /* Conteiner de conteúdos */
-#conteudo_container{
+#conteudo_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,6 +123,6 @@ img, .titulo{
   padding: 0 20px;
 }
 
-.altura{
+.altura {
   height: 460px;
 }

@@ -24,16 +24,17 @@ const Projetos = () => {
                         onClick={() => handleAbrirPopup(projeto)}
                         className="projeto_item"
                     >
+                        <img src={projeto.imagem} className="projeto_imagem"/>
                         <h2 className="projeto_titulo">{projeto.titulo}</h2>
                     </div>
                 ))}
             </div>
 
-            <section id="popup_projeto">
-                {projetoSelecionado && (
-                    <PopupProjetos project={projetoSelecionado} onClose={handleFecharPopup} />
-                )}
-            </section>
+            {projetoSelecionado && (
+                <section id="popup_projeto" className="blur-container">
+                    <PopupProjetos projeto={projetoSelecionado} onClose={handleFecharPopup} />
+                </section>
+            )}
         </PageWrap>
     )
 }

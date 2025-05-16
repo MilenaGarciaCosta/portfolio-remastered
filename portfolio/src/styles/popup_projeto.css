@@ -1,8 +1,0 @@
-@import "../styles/main.css";
-
-#popup_projeto{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: aqua;
-}

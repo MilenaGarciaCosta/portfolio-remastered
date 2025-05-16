@@ -44,7 +44,7 @@ const Sidebar =()=> {
                 </div>
             </div>
             
-            <section id="alerta_hidden" className="alerta_hidden hidden">
+            <section id="alerta_hidden" className="alerta_hidden blur-container hidden">
                 <div id="alerta_conteudo" className="sombra-container">
                     <p>Enviado para a área de transferência</p>
                     <button id="fechar_alerta">Fechar</button>
