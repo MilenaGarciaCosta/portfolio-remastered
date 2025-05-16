@@ -39,7 +39,7 @@ const Sidebar =()=> {
                             <h4 className="titulo_informacao" id="curriculo_titulo">Currículo</h4>
                             <img src={DowloadIcon} alt="Instalar currículo" /> 
                         </div>
-                        <Link className="link_informacao" to="../assets/files/" download id="curriculo_link">Clique para instalar</Link>
+                        <a className="link_informacao" href="/Milena_Garcia-curriculo.pdf"download id="curriculo_link" rel="noopener noreferrer">Clique para instalar</a>
                     </div>
                 </div>
             </div>
