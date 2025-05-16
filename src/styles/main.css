@@ -55,7 +55,7 @@ body {
   justify-content: center;
   align-items: center;
   background-size: 200% 200%;
-  animation: color 8s ease-in-out infinite;
+  animation: color 6s ease-in-out infinite;
 }
 
 #main_container {
@@ -120,7 +120,7 @@ img,
   width: 50vw;
   background-color: var(--verde-container);
   border-radius: 10px;
-  padding: 0 20px;
+  padding: 0 20px 10px 20px;
 }
 
 .altura {
