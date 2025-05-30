@@ -126,3 +126,10 @@ img,
 .altura {
   height: 460px;
 }
+
+/* Separação de parágrafos Sobre Mim */
+#texto_sobre_mim{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

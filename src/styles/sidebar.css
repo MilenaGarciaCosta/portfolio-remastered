@@ -2,7 +2,7 @@
 
 /* Estruturação*/
 #foto_perfil{
-    height: 165px;
+    height: 180px;
     position: relative;
     top: -83px;
 }
@@ -11,6 +11,7 @@
     background-color: var(--verde-container);
     border-radius: 10px;
     padding: 0 10px;
+    width: 18vw;
 }
 
 #section_container, .ajuste_altura_aside{
@@ -26,12 +27,12 @@
 
 #informacoes_container{
     background-color: var(--verde-container-secundario);
-    width: fit-content;
     padding: 10px 15px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 16vw;
 }
 
 .margin_bottom_link{
@@ -55,12 +56,12 @@
 .titulo_informacao{
     font-family: var(--fonte-titulos);
     font-weight: 600;
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 
 .link_informacao{
-    font-size: 15px;
+    font-size: 17px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -74,7 +75,7 @@
 }
 
 #curriculo_container img{
-    height: 18px;
+    height: 20px;
     margin-left: 5px;
 }
 
