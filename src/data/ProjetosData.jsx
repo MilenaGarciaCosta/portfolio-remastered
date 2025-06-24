@@ -2,6 +2,7 @@ import ImagemPj1 from "../assets/projetos-img/kos-manager-1.PNG"
 import ImagemPj2 from "../assets/projetos-img/mahindra-racing.png"
 import ImagemPj3 from "../assets/projetos-img/jogo-advinha.png"
 import ImagemPj4 from "../assets/projetos-img/webscraping-mnsg.png"
+import ImagemPj5 from "../assets/projetos-img/fire-sense.png"
 
 const ProjetosData =[
     {
@@ -27,17 +28,23 @@ const ProjetosData =[
         tecnologias: 'JavaScript, HTML, CSS, ',
         link: 'https://github.com/MilenaGarciaCosta/Validacao-de-voz',
         descricao: 'Um jogo web onde o usuário deve advinhar um número gerado randomicamente. A função Math.random() retorna um número pseudo-aleatório e o usuário deve adivinhar qual número foi gerado (entre 0 e 100). Conforme seus chutes, é exibido na tela se o chute feito é maior ou menor que o número secreto. O usuário também tem a opção de desistir para jogar novamente ao falar "Fim de jogo". O reconhecimento de voz do jogo é feito a partir da interface SpeechRecognition da Web Speech API.'
-        },
-        {
+    },
+    {
         id: 4,
         titulo: 'Webscraping de mensagens',
         imagem: ImagemPj4,
         tecnologias: 'Python, Selenium',
         link: 'https://github.com/MilenaGarciaCosta/capturing-whatsApp-messages',
         descricao: 'Projeto feito para monitorar mensagens de um grupo de conversa. Ao notar um padrão estabelecido no código, a mensagem é tratada e as informações relevantes são armazenadas em variáveis.'
-        },
-
-    /* Se for adicionar mais de 6 projetos, atualizar o grid layout no css popup_projeto */
+    },
+    {
+        id: 5,
+        titulo: 'Fire Sense',
+        imagem: ImagemPj5,
+        tecnologias: 'React, Laravel, Tailwind CSS, Axios, SQLite',
+        link: 'https://github.com/medeirossteffany/FireSense',
+        descricao: 'FireSense é uma solução tecnológica desenvolvida para a Global Solution do primeiro semestre de 2025, projeto semestral proposto pela FIAP. A plataforma é uma ferramenta de monitoramento climático inteligente focada em agricultura. O sistema calcula o risco de queimadas baseado em dados climáticos em tempo real e, quando o risco atinge níveis críticos, aciona automaticamente o sistema de irrigação.'
+    },
 ]
 
 export default ProjetosData
