@@ -19,7 +19,7 @@ const ProjetosData =[
         imagem: ImagemPj2,
         tecnologias: 'React, JavaScript, Node.js, SQL',
         link: 'https://github.com/MilenaGarciaCosta/mahindra-racing-ch',
-        descricao: 'Vigil Race é uma solução desenvolvida para a empresa Tech Mahindra no Challenge promovido pela FIAP em 2025. A proposta do projeto é aumentar a visibilidade das corridas da Formula E consolidando uma comunidade. A plataforma conta com um chat e um sistema onde o usuário ganha pontos ao compartilhar e interagir com a comunidade, podendo serem trocados por diversos prêmios. Com esse projeto, meu grupo ficou entre os 6 selecionados (de 93 grupos) para expor nosso projeto no evento Next promovido também pela FIAP!',
+        descricao: 'Vigil Race é uma solução desenvolvida para a empresa Tech Mahindra no Challenge promovido pela FIAP em 2025. A proposta do projeto é aumentar a visibilidade das corridas da Formula E consolidando uma comunidade. A plataforma conta com um fórum e um sistema onde o usuário ganha pontos ao compartilhar e interagir com a comunidade que podem ser trocados por diversos prêmios. Com esse projeto, meu grupo ficou entre os 6 selecionados (de 93 grupos) para expor nosso projeto no evento Next promovido também pela FIAP!',
     },
     {
         id: 3,
@@ -35,7 +35,7 @@ const ProjetosData =[
         imagem: ImagemPj4,
         tecnologias: 'Python, Selenium',
         link: 'https://github.com/MilenaGarciaCosta/capturing-whatsApp-messages',
-        descricao: 'Projeto feito para monitorar mensagens de um grupo de conversa. Ao notar um padrão estabelecido no código, a mensagem é tratada e as informações relevantes são armazenadas em variáveis.'
+        descricao: 'Este sistema monitora mensagens de um grupo de conversa. Ao encontrar uma mensagem com um padrão de estrutura estabelecido no código a mensagem é tratada e as informações relevantes são armazenadas em variáveis e salvas em um banco de dados.'
     },
     {
         id: 5,
