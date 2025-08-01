@@ -22,6 +22,13 @@ const Educacao =()=>{
                     <p>Curso de inglês (A1 ao C2)</p>
                     <p>2016 - 2021</p>
                 </div>
+
+                <div className="educacao_card">
+                <h3>AWS Educate</h3>
+                    <p>Getting Started with Compute</p>
+                    <p>Agosto 2025</p>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f53d7ed8-3f9d-407f-a31e-cc028e774958" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
             </section>
         </PageWrap>
     )
